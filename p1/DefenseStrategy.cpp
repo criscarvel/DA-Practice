@@ -52,7 +52,7 @@ float cellValueMain(int col, int row, float r, List<Object*> obstacles, int nCw,
 		d = _distance((*cObs)->position, pos);
 		if (d >= 2 * r) {
 		//	std::cout << "Entering in the IF" << std::endl;
-			v += (d + (*cObs)->radio) / (*cObs)->radio;
+			v += (d + (*cObs)->radio) / d;
 		}
 		++cObs;
 
